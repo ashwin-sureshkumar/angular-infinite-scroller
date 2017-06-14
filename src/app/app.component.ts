@@ -10,7 +10,7 @@ import { InfiniteScrollerDirective } from './infinite-scroller.directive';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  name = 'app works!';
+  title = '';
 
   currentPage: number = 1;
 
@@ -19,7 +19,7 @@ export class AppComponent {
   scrollCallback;
 
   constructor(private hackerNewsSerivce: HackerNewsService) {
-    this.name = 'Angular Infinite Scroller with RxJS';
+    this.title = 'Angular Infinite Scroller with RxJS';
     this.scrollCallback = this.getStories.bind(this);
    }
 

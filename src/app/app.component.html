@@ -1,3 +1,6 @@
-<h1>
-  {{title}}
-</h1>
+<div>
+  <h2>Hello {{name}}</h2>
+  <ul id="infinite-scroller" appInfiniteScroller scrollPerecnt="70" immediateCallback="true" [scrollCallback]="scrollCallback">
+    <li *ngFor="let item of news">{{item.title}}</li>
+  </ul>
+</div>
